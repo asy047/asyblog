@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@import url(fonts.css);
+
+html {font-size: 10px; scroll-behavior: smooth;}
+body {
+    background: #eeeeee;
+    font: 500 1.5rem 'Apple SD Gothic', sans-serif; color: #222;
+}
+
+.x-cursor {
+    position: absolute;
+    right: 20px; top: 20px;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.x-cursor::before, .x-cursor::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 30px;
+    height: 1px;
+    transform: rotate(45deg);
+    background: #000;
+}
+.x-cursor::after {transform: rotate(-45deg);}
+.container {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    box-sizing: border-box;
+}
+h1 {text-align: center; text-transform: uppercase; font-size: 2em; margin-bottom: 1em;}
+form{ width:  100%; }
+form input {
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 2em;
+    border: none;
+}
+form input[type='submit']{
+    display: block;
+    width: 100%;
+    height: 2.5em;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: #0f4c81;
+    color: #fff;
+    cursor: pointer;
+}
+form input[type='submit'].disabled{
+    background: #aaa;
+}
+a {
+    text-align: right;
+}
+p {
+    margin: 1em;
+    font-size: 1.4rem;
+    text-align: center;
+}

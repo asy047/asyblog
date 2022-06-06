@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Apple SD Gothic';
+    src: url(../fonts/AppleSDGothicNeoUL.eot) format('eot'),
+        url(../fonts/AppleSDGothicNeoUL.woff) format('woff'),
+        url(../fonts/AppleSDGothicNeoUL.ttf) format('ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Apple SD Gothic';
+    src: url(../fonts/AppleSDGothicNeoL.eot) format('eot'),
+        url(../fonts/AppleSDGothicNeoL.woff) format('woff'),
+        url(../fonts/AppleSDGothicNeoL.ttf) format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Apple SD Gothic';
+    src: url(../fonts/AppleSDGothicNeoR.eot) format('eot'),
+        url(../fonts/AppleSDGothicNeoR.woff) format('woff'),
+        url(../fonts/AppleSDGothicNeoR.ttf) format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Apple SD Gothic';
+    src: url(../fonts/AppleSDGothicNeoM.eot) format('eot'),
+        url(../fonts/AppleSDGothicNeoM.woff) format('woff'),
+        url(../fonts/AppleSDGothicNeoM.ttf) format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Apple SD Gothic';
+    src: url(../fonts/AppleSDGothicNeoB.eot) format('eot'),
+        url(../fonts/AppleSDGothicNeoB.woff) format('woff'),
+        url(../fonts/AppleSDGothicNeoB.ttf) format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LAB디지털';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
