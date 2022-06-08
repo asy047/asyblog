@@ -3,6 +3,12 @@ console.log("load");
 
 guestBookUp = null;
 guestDel = null;
+function autoplay(){
+  var r = confirm("Would You Like To AutoPlay Music?");
+  if (r == true) {
+      document.getElementById("player").muted = false;
+  }
+}
 
 // ========== audio control ==========
 // 변수 선언
@@ -12,6 +18,7 @@ var playButton = document.getElementById("play");
 var playingState = document.getElementById("playingState");
 var audioArea = document.getElementsByClassName("audio-area");
 console.log(audioArea);
+
 // audio state
 var audioPaused = audio.paused;
 audio.onplaying = function() {
@@ -157,15 +164,28 @@ $(function() {
     $(".depth2").children().stop().slideDown();
   });
   $(".post").on('mouseleave', function(){
-    $(".depth2").children().stop().slideUp();
+    if($(".post a").hasClass("on")) {
+      $(".depth2").children().stop().slideDown();
+    } else {
+      $(".depth2").children().stop().slideUp();
+    }
+  $(".depth1").on('click', function() {
+    if($(".post a").hasClass("on")) {
+      $(".depth2").children().stop().slideDown();
+    } else {
+      $(".depth2").children().stop().slideUp();
+    }
+  })
   });
 
   // loading
   $(".loading").fadeOut(1500);
 
   //tab nav
-  $(".main-nav li").on('click', function() {
-    var link = $(this).attr('data-tab');
+  $(".main-nav li a").on('click', function() {
+    var link = $(this).parents().attr('data-tab');
+    $(".main-nav li a").removeClass("on");
+    $(this).addClass("on");
     $(link).siblings().hide();
     $(link).fadeIn();
     if(link == "#diary") {

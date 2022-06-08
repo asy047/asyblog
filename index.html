@@ -9,6 +9,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/all.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body onload="init()">
     <div class="loading">
@@ -29,7 +30,7 @@
             
             <div id="sub-header">
                 <div class="audio-area"> <!-- ## 테스팅을 위해 muted 해놓음 ## -->
-                    <iframe src="media/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>  
+                    <iframe src="media/silence.mp3" allow="autoplay" id="audio" hidden></iframe>  
                     <audio id="player" autoplay loop>
                         <source src="media/bgMusicTest.mp3" type="audio/mp3">
                     </audio>
@@ -431,12 +432,14 @@ function out(e) { drawing = false; }
     
     <script src="js/script.js"></script>
     <script>
+        // autoplay();
         function loginPopup() {
             window.open("login.html", "a", "width=400, height=500, left=100, top=100");
         };
         function joinPopup() {
             window.open("join.html", "a", "width=400, height=500, left=100, top=100");
         }
+        
     </script>
 </body>
 </html>

@@ -208,7 +208,7 @@ header .login {
     overflow: hidden;
     width: 100%;
     height: 200px;
-    border-radius: 50px;
+    /* border-radius: 50px; */
 }
 .left-side figure img {
     margin-left: -60px;
@@ -482,7 +482,9 @@ h2 {
     /* cursor: pointer; */
 }
 .main-nav nav ul.depth1 > li:not(:nth-child(2)) a:hover,
-ul.depth2 li:hover {background: linear-gradient(to right, dodgerblue, hotpink); color: #fff;}
+ul.depth2 li:hover,
+.main-nav nav ul.depth1 > li:not(:nth-child(2)) a.on,
+ul.depth2 li a.on {background: linear-gradient(to right, dodgerblue, hotpink); color: #fff;}
 .main-nav nav ul.depth2 {
     display: block;
     background: #eee;
